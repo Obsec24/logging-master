@@ -1,0 +1,6 @@
+agent/filebeat-7.3.2-amd64.deb
+server/esdata01
+/log/*-second.out
+/log/*-first.out
+/log/*-pii.out
+/log/*.privapp.log
