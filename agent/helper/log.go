@@ -1,6 +1,6 @@
 package main
 import (
-  log "github.com/dan2sgl/logrus"
+  log "github.com/sirupsen/logrus"
   "os"
 )
 
