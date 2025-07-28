@@ -148,13 +148,19 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["172.31.15.135:9200"]
+  hosts: ["http://172.31.15.135:9200"]
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
   username: "elastic"
   password: "epn.2025!"
   index: "filebeat-prueba"
+
+# Configuración de la plantilla de índice (index template)
+setup.template.name: "filebeat-prueba"
+setup.template.pattern: "filebeat-prueba*"
+setup.template.enabled: true
+setup.template.overwrite: true
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
   # The Logstash hosts
