@@ -154,7 +154,7 @@ output.elasticsearch:
   #protocol: "https"
   username: "elastic"
   password: "epn.2025!"
-
+  index: "filebeat-prueba"
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
   # The Logstash hosts
