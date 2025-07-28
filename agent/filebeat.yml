@@ -154,11 +154,11 @@ output.elasticsearch:
   #protocol: "https"
   username: "elastic"
   password: "epn.2025!"
-  index: "filebeat-prueba"
+  index: "logs-custom-%{+yyyy.MM.dd}"
 
 # Configuración de la plantilla de índice (index template)
-setup.template.name: "filebeat-prueba"
-setup.template.pattern: "filebeat-prueba*"
+setup.template.name: "logs-custom"
+setup.template.pattern: "logs-custom-*"
 setup.template.enabled: true
 setup.template.overwrite: true
 #----------------------------- Logstash output --------------------------------
