@@ -154,6 +154,7 @@ output.elasticsearch:
   #protocol: "https"
   username: "elastic"
   password: "epn.2025!"
+  setup.ilm.enabled: false
   index: "logs-custom-%{+yyyy.MM.dd}"
 
 # Configuración de la plantilla de índice (index template)
